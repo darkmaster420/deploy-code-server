@@ -1,6 +1,11 @@
 # Start from the code-server Debian base image
 FROM codercom/code-server:4.0.2
 
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    yt-dlp \
+    python-pip
+
 USER coder
 
 # Apply VS Code settings
