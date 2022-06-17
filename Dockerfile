@@ -6,6 +6,23 @@ USER coder
 # Apply VS Code settings
 COPY deploy-container/settings.json .local/share/code-server/User/settings.json
 
+RUN apt -qq update --fix-missing && \
+    apt -qq install -y git \
+    aria2 \
+    wget \
+    curl \
+    busybox \
+    unzip \
+    unrar \
+    tar \
+    python3 \
+    ffmpeg \
+    python3-pip \
+    p7zip-full \
+    p7zip-rar \
+    tidal-dl \
+    spot-dl
+
 # Use bash shell
 ENV SHELL=/bin/bash
 
