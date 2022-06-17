@@ -6,9 +6,6 @@ USER coder
 # Apply VS Code settings
 COPY deploy-container/settings.json .local/share/code-server/User/settings.json
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
 # Use bash shell
 ENV SHELL=/bin/bash
 
