@@ -3,8 +3,7 @@ FROM codercom/code-server:4.0.2
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
-    yt-dlp \
-    python-pip
+    python3-pip
 
 USER coder
 
