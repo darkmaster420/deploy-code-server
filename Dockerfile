@@ -2,8 +2,6 @@
 FROM codercom/code-server:4.0.2
 
 # Install dependencies
-RUN apt update && apt upgrade -y 
-
 RUN apt install -y \
     python3-pip
 
