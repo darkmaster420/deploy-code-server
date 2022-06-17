@@ -19,9 +19,7 @@ RUN apt -qq update --fix-missing && \
     ffmpeg \
     python3-pip \
     p7zip-full \
-    p7zip-rar \
-    tidal-dl \
-    spot-dl
+    p7zip-rar
 
 # Use bash shell
 ENV SHELL=/bin/bash
