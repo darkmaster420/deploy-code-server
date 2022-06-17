@@ -2,7 +2,7 @@
 FROM codercom/code-server:4.0.2
 
 # Install dependencies
-RUN apt install -y \
+RUN sudo apt install -y \
     python3-pip
 
 USER coder
