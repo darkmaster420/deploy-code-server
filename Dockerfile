@@ -3,7 +3,8 @@ FROM codercom/code-server:4.0.2
 
 # Install dependencies
 RUN sudo apt update && sudo apt install -y \
-    python3-pip
+    python3-pip \
+    sudo
 
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
