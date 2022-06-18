@@ -1,3 +1,6 @@
 ffmpeg
 tidal-dl
 yt-dlp
+wget
+curl
+spotdl
